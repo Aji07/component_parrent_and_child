@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+          <h3 class="makeCenter">{{title}}</h3>
+          <p style="text-align: justify;
+              text-justify: inter-word;">
+              {{details}}
+          </p>
+
+      </div>
+  </div>
+</div>
+
+<label for="item-input">Add an Programe:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+
